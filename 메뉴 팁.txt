@@ -1,0 +1,1 @@
+nav.menu>ul.navi>li*4>ul.submenu>li*4
