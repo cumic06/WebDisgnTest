@@ -4,6 +4,7 @@
     font-family: "맑은고딕";
     font-size: 16px;
     list-style: none;
+    color: #333333;
 }
 
 body {
@@ -112,15 +113,14 @@ header {
 }
 
 .bodywrap {
-    height: 150px;
-    background-color: blueviolet;
+    width: 1200px;
+    height: 500px;
+    background-color: darkgray;
 }
 
 .contents {
     position: relative;
     width: 1200px;
-    height: 150px;
-    background-color: yellow;
 }
 
 .tabmenu {
@@ -133,22 +133,66 @@ header {
 
 .tabmenu>li {
     width: 100px;
-    float:left;
+    float: left;
     line-height: 30px;
 }
-.tabmenu>li>a{
+
+.tabmenu>li>a {
+    font-size: 16px;
     background-color: #cccccc;
     border: 1px solid;
     text-align: center;
+    border-bottom: none;
 }
 
-.notice {}
+.tabmenu>li:first-child a {
+    border-right: none;
+}
+
+.tabmenu>li>a:hover {
+    background-color: #eeeeee;
+}
+
+.tabmenu>li.active>a {
+    background-color: #ffffff;
+}
+
+.tabmenu>li div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid;
+}
+
 
 .notice li:hover {
     font-weight: bold;
 }
 
-.gallery {}
+.notice ul {
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.notice li {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 31px;
+    line-height: 31px;
+}
+
+.gallery li {
+    float: left;
+    margin: 20px;
+}
 
 .gallery>ul>li:hover {
     opacity: 0.5;

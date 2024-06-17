@@ -13,3 +13,12 @@ setInterval(function(){
     $(".slidelist").animate({marginLeft: 0});
     $(".slidelist").delay(2000);
 });
+
+$(".tabmenu>li").click(function(){
+    $(".active").removeClass("active");
+    $(this).addClass("active");
+});
+
+$(".notice >ul> li:first").click(function(){
+    
+});
