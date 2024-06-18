@@ -206,6 +206,45 @@ header {
     float: right;
 }
 
+.layer{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.layer.active{
+    z-index: 1;
+    display: block;
+}
+.layerup{
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    position: fixed;
+    left:30%;
+    top:20%;
+}
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: bold;
+}
+.upbody{
+    text-align: center;
+    line-height: 30px;
+}
+.btn{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 30px;
+    bottom :10px;
+    right:10px;
+    cursor: pointer;
+}
+
 footer {
     height: 100px;
     background-color: brown;

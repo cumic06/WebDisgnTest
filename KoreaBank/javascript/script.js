@@ -19,6 +19,10 @@ $(".tabmenu>li").click(function(){
     $(this).addClass("active");
 });
 
-$(".notice >ul> li:first").click(function(){
-    
+$(".notice li:first").click(function(){
+    $(".layer").addClass("active");
 });
+
+$(".btn").click(function(){
+    $(".layer").removeClass("active")
+})

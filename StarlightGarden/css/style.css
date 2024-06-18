@@ -82,12 +82,6 @@ header {
     text-align: center;
 }
 
-.slide {
-    float: right;
-    width: calc(100% - 600px);
-    height: calc(100vh - 100px);
-    background-color: yellow;
-}
 
 .contents {
     float: left;
@@ -190,8 +184,20 @@ header {
 }
 
 .shortcut {
+
     height: 10%;
     background-color: darkorange;
+}
+.shortcut li{
+    float:right;
+}
+
+.slide {
+    float: right;
+    width: calc(100% - 600px);
+    height: calc(100vh - 100px);
+    min-height: 1000px;
+    background-color: yellow;
 }
 
 
